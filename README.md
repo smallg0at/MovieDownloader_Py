@@ -1,4 +1,5 @@
-# MovieDownloader_Py[![Bless](https://cdn.rawgit.com/LunaGao/BlessYourCodeTag/master/tags/alpaca.svg)](http://lunagao.github.io/BlessYourCodeTag/)
+# MovieDownloader_Py
+- [![Bless](https://cdn.rawgit.com/LunaGao/BlessYourCodeTag/master/tags/alpaca.svg)](http://lunagao.github.io/BlessYourCodeTag/)
 电影bt下载器（需搭配py3，chrome内核浏览器，迅雷或任意下载工具使用）；
 ## 文件结构
 ### 源文件
