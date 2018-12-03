@@ -68,17 +68,26 @@ def get_movie_ftp(target_name):
     return ftp_urls
 
 if __name__ == "__main__":
+    print("输入电影关键字:")
     urls = get_movie_ftp(input(":->"))
     if urls == None:
         print("暂时无法找到" + '"' + sys.argv[2] + '"的资源！ ')
         time.sleep(4)
         exit(0)
-
-    for each in urls:
-        tmp = each.split("/")
-        print("正在为您下载：" + tmp[len(tmp) - 1])
-        os.system('"C:\Program Files (x86)\Thunder Network\Thunder\Program\Thunder.exe" ' + each)
-        time.sleep(5)
-        pyautogui.press("enter")
-        time.sleep(5)
-        pyautogui.press("enter")
+    print("以上似乎是您所需求的资源。下载方法选择：1为自动，2为复制，空为不下载")
+    dlmode = int(input("请输入方法>>"))
+    if dlmode == 1:
+        for each in urls:
+            tmp = each.split("/")
+            print("正在为您下载：" + tmp[len(tmp) - 1])
+            os.system('"C:\Program Files (x86)\Thunder Network\Thunder\Program\Thunder.exe" ' + each)
+            time.sleep(5)
+            pyautogui.press("enter")
+            time.sleep(5)
+            pyautogui.press("enter")
+    if dlmode == 2:
+        print("复制以下链接至迅雷（或其他bt下载工具）:")
+        for each in urls:
+            tmp = each.split("/")
+            print(each)
+            input()
