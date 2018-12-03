@@ -1,6 +1,6 @@
 # MovieDownloader_Py
 - [![Bless](https://cdn.rawgit.com/LunaGao/BlessYourCodeTag/master/tags/alpaca.svg)](http://lunagao.github.io/BlessYourCodeTag/)
-电影bt下载器（需搭配py3，chrome内核浏览器，迅雷或任意下载工具使用）；
+- 电影bt下载器（需搭配py3，chrome内核浏览器，迅雷或任意下载工具使用）；
 ## 文件结构
 ### 源文件
 - common.py为通用版，输入查询关键字后会自动查询并给出结果，复制链接到迅雷内即可下载；【不建议使用】
