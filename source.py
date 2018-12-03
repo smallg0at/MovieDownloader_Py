@@ -85,6 +85,7 @@ if __name__ == "__main__":
             pyautogui.press("enter")
             time.sleep(5)
             pyautogui.press("enter")
+            input()
     if dlmode == 2:
         print("复制以下链接至迅雷（或其他bt下载工具）:")
         for each in urls:
